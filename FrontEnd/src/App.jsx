@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import Form from "./Components/Form";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
      <nav className="fixed top-0 left-0 w-full bg-blue-600 text-white shadow-lg z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<Form />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
